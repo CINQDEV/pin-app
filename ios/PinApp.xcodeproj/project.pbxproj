@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C0BC23DF4E8EAB8BF750CAA /* SearchIsleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43294CBD62522A15A95AF6 /* SearchIsleAPI.swift */; };
+		1FD9BBF380BDE9ADF1502452 /* IslandsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1883827A6EFE7FE856CEE0CE /* IslandsViewModel.swift */; };
+		41477ED5DEE2DDB5E2004D6B /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2506EDE661F64B2B3C12F7 /* Island.swift */; };
+		536E03BAAECCA030CC732BC5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A4355E5F2180EF991B6ED4 /* ContentView.swift */; };
+		564FFF21455402B3316B6697 /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A186EA5B9995338B522B52CF /* MapScreen.swift */; };
+		59A9D1C0A59775734B34893B /* CheckedIslandsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC23E6A0FE56A32933742391 /* CheckedIslandsStore.swift */; };
+		7BA479DB91BE4CDE3864859E /* IslandsListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EB19AE2843E238EC017977 /* IslandsListScreen.swift */; };
+		AB229931B2E06C840258EBCD /* PinAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7CAFA932F7EFA132933777 /* PinAppApp.swift */; };
+		AF9CAE7F6FD31C851A5BB62C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8D87BCC222AF927E3458399 /* Assets.xcassets */; };
+		BE68CF94FC8F84AB00890DB0 /* CatchBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292E276FB073A2A2C34CF3E8 /* CatchBanner.swift */; };
+		DA24660DEE085B056812B63F /* IslandRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD955787895AC0DEBFADA22C /* IslandRow.swift */; };
+		E59B886ADCE70B3F2C6060F4 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38B5689DED3FE515ABF4786 /* LocationManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D4C18194527389B46F1CE9C /* PinApp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = PinApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1883827A6EFE7FE856CEE0CE /* IslandsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandsViewModel.swift; sourceTree = "<group>"; };
+		292E276FB073A2A2C34CF3E8 /* CatchBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchBanner.swift; sourceTree = "<group>"; };
+		2E7CAFA932F7EFA132933777 /* PinAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinAppApp.swift; sourceTree = "<group>"; };
+		43EB19AE2843E238EC017977 /* IslandsListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandsListScreen.swift; sourceTree = "<group>"; };
+		743148EEFCABC26410F6A6F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A186EA5B9995338B522B52CF /* MapScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
+		A7A4355E5F2180EF991B6ED4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DA43294CBD62522A15A95AF6 /* SearchIsleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchIsleAPI.swift; sourceTree = "<group>"; };
+		DE2506EDE661F64B2B3C12F7 /* Island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
+		E38B5689DED3FE515ABF4786 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		E8D87BCC222AF927E3458399 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC23E6A0FE56A32933742391 /* CheckedIslandsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckedIslandsStore.swift; sourceTree = "<group>"; };
+		FD955787895AC0DEBFADA22C /* IslandRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandRow.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		059BAB41F4A76B6009CACE7C /* PinApp */ = {
+			isa = PBXGroup;
+			children = (
+				E8D87BCC222AF927E3458399 /* Assets.xcassets */,
+				743148EEFCABC26410F6A6F5 /* Info.plist */,
+				2E7CAFA932F7EFA132933777 /* PinAppApp.swift */,
+				2B2CE525F247F3A244B5AAB5 /* Location */,
+				7C715D3C89ACD4B55932A245 /* Models */,
+				33AE5531C452D39CB14BD855 /* Networking */,
+				8222E9DCD47FE6D9705CE670 /* Persistence */,
+				98070C30A6F8D74A03754D7C /* ViewModels */,
+				52ED0615BBF165216871DA97 /* Views */,
+			);
+			path = PinApp;
+			sourceTree = "<group>";
+		};
+		2B2CE525F247F3A244B5AAB5 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				E38B5689DED3FE515ABF4786 /* LocationManager.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		33AE5531C452D39CB14BD855 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DA43294CBD62522A15A95AF6 /* SearchIsleAPI.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		52ED0615BBF165216871DA97 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				292E276FB073A2A2C34CF3E8 /* CatchBanner.swift */,
+				A7A4355E5F2180EF991B6ED4 /* ContentView.swift */,
+				FD955787895AC0DEBFADA22C /* IslandRow.swift */,
+				43EB19AE2843E238EC017977 /* IslandsListScreen.swift */,
+				A186EA5B9995338B522B52CF /* MapScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7AD8F6A4FBFA9524F97B2F5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D4C18194527389B46F1CE9C /* PinApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C715D3C89ACD4B55932A245 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DE2506EDE661F64B2B3C12F7 /* Island.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8222E9DCD47FE6D9705CE670 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				EC23E6A0FE56A32933742391 /* CheckedIslandsStore.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		98070C30A6F8D74A03754D7C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1883827A6EFE7FE856CEE0CE /* IslandsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B145991A6F87CF5EC30EA818 = {
+			isa = PBXGroup;
+			children = (
+				059BAB41F4A76B6009CACE7C /* PinApp */,
+				7AD8F6A4FBFA9524F97B2F5E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BA2C3DFA27EF9C90747011A /* PinApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB7B2E15183FE13D026BBFB7 /* Build configuration list for PBXNativeTarget "PinApp" */;
+			buildPhases = (
+				6559D8EB091FE86512EBB411 /* Sources */,
+				7D69F50402E1ADFC1B5817F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PinApp;
+			packageProductDependencies = (
+			);
+			productName = PinApp;
+			productReference = 0D4C18194527389B46F1CE9C /* PinApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB66604AE3FAF25087910B4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					1BA2C3DFA27EF9C90747011A = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 28D8708AF06B2A0A4459A011 /* Build configuration list for PBXProject "PinApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = B145991A6F87CF5EC30EA818;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 7AD8F6A4FBFA9524F97B2F5E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BA2C3DFA27EF9C90747011A /* PinApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7D69F50402E1ADFC1B5817F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF9CAE7F6FD31C851A5BB62C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6559D8EB091FE86512EBB411 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE68CF94FC8F84AB00890DB0 /* CatchBanner.swift in Sources */,
+				59A9D1C0A59775734B34893B /* CheckedIslandsStore.swift in Sources */,
+				536E03BAAECCA030CC732BC5 /* ContentView.swift in Sources */,
+				41477ED5DEE2DDB5E2004D6B /* Island.swift in Sources */,
+				DA24660DEE085B056812B63F /* IslandRow.swift in Sources */,
+				7BA479DB91BE4CDE3864859E /* IslandsListScreen.swift in Sources */,
+				1FD9BBF380BDE9ADF1502452 /* IslandsViewModel.swift in Sources */,
+				E59B886ADCE70B3F2C6060F4 /* LocationManager.swift in Sources */,
+				564FFF21455402B3316B6697 /* MapScreen.swift in Sources */,
+				AB229931B2E06C840258EBCD /* PinAppApp.swift in Sources */,
+				0C0BC23DF4E8EAB8BF750CAA /* SearchIsleAPI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5C8E6337D394682932588C11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PinApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinapp.PinApp;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		77B7725F5E7F4E415FAC55CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A83C377AC15A7C434CB17B58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PinApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinapp.PinApp;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E679DA17343FD757511F81AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28D8708AF06B2A0A4459A011 /* Build configuration list for PBXProject "PinApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77B7725F5E7F4E415FAC55CD /* Debug */,
+				E679DA17343FD757511F81AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FB7B2E15183FE13D026BBFB7 /* Build configuration list for PBXNativeTarget "PinApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A83C377AC15A7C434CB17B58 /* Debug */,
+				5C8E6337D394682932588C11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB66604AE3FAF25087910B4C /* Project object */;
+}
