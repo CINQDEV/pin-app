@@ -5,11 +5,13 @@ struct ContentView: View {
 
     var body: some View {
         ZStack(alignment: .top) {
-            TabView {
+            TabView(selection: $viewModel.selectedTab) {
                 MapScreen()
                     .tabItem { Label("Map", systemImage: "map") }
+                    .tag(AppTab.map)
                 IslandsListScreen()
                     .tabItem { Label("Islands", systemImage: "list.bullet") }
+                    .tag(AppTab.islands)
             }
             CatchBanner(island: viewModel.justCaught, onDismiss: viewModel.dismissCaught)
         }

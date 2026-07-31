@@ -41,10 +41,17 @@ final class LocationManager: NSObject, ObservableObject, CLLocationManagerDelega
         guard let coordinate = locations.last?.coordinate else { return }
         Task { @MainActor in
             self.coordinate = coordinate
+            self.errorMessage = nil
         }
     }
 
     nonisolated func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        // kCLErrorLocationUnknown just means CoreLocation hasn't gotten a fix *yet* —
+        // it's transient and normally followed by a successful update, so it shouldn't
+        // be surfaced as a user-facing error (Apple's own guidance on this code).
+        if let clError = error as? CLError, clError.code == .locationUnknown {
+            return
+        }
         let description = error.localizedDescription
         Task { @MainActor in
             self.errorMessage = description

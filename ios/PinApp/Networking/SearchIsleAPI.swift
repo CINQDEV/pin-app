@@ -23,6 +23,7 @@ private struct WPIslandRecord: Decodable {
     let link: String
     let title: Title
     let acf: ACF?
+    let featured_media: Int?
 }
 
 enum SearchIsleAPI {
@@ -63,7 +64,7 @@ enum SearchIsleAPI {
         components.queryItems = [
             URLQueryItem(name: "per_page", value: String(perPage)),
             URLQueryItem(name: "page", value: String(page)),
-            URLQueryItem(name: "_fields", value: "id,title,link,acf"),
+            URLQueryItem(name: "_fields", value: "id,title,link,acf,featured_media"),
         ]
 
         let (data, response) = try await URLSession.shared.data(from: components.url!)
@@ -84,7 +85,8 @@ enum SearchIsleAPI {
             description: htmlToPlainText(record.acf?.island_intro ?? ""),
             lat: coords.lat,
             lng: coords.lng,
-            url: record.link
+            url: record.link,
+            featuredMediaID: (record.featured_media ?? 0) == 0 ? nil : record.featured_media
         )
     }
 
@@ -116,5 +118,32 @@ enum SearchIsleAPI {
             .replacingOccurrences(of: "&quot;", with: "\"")
             .replacingOccurrences(of: "&#039;", with: "'")
             .replacingOccurrences(of: "&nbsp;", with: " ")
+    }
+
+    private struct MediaRecord: Decodable {
+        struct Sizes: Decodable {
+            struct Size: Decodable { let source_url: String }
+            let large: Size?
+            let medium: Size?
+        }
+        struct MediaDetails: Decodable { let sizes: Sizes? }
+        let source_url: String?
+        let media_details: MediaDetails?
+    }
+
+    /// Fetched lazily (not part of the bulk list fetch) — only called when a detail
+    /// screen for a specific island with a `featuredMediaID` is actually shown.
+    static func fetchImageURL(mediaID: Int) async throws -> URL? {
+        var components = URLComponents(string: "https://searchisle.com/wp-json/wp/v2/media/\(mediaID)")!
+        components.queryItems = [URLQueryItem(name: "_fields", value: "source_url,media_details")]
+        let (data, response) = try await URLSession.shared.data(from: components.url!)
+        guard let http = response as? HTTPURLResponse, (200...299).contains(http.statusCode) else {
+            throw SearchIsleAPIError.badResponse((response as? HTTPURLResponse)?.statusCode ?? -1)
+        }
+        let media = try JSONDecoder().decode(MediaRecord.self, from: data)
+        let urlString = media.media_details?.sizes?.large?.source_url
+            ?? media.media_details?.sizes?.medium?.source_url
+            ?? media.source_url
+        return urlString.flatMap(URL.init(string:))
     }
 }

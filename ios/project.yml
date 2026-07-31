@@ -23,3 +23,28 @@ targets:
         TARGETED_DEVICE_FAMILY: "1"
         CODE_SIGN_STYLE: Automatic
         ASSETCATALOG_COMPILER_APPICON_NAME: ""
+  PinAppUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - PinAppUITests
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.pinapp.PinAppUITests
+        SWIFT_VERSION: "6.0"
+        GENERATE_INFOPLIST_FILE: YES
+        CODE_SIGN_STYLE: Automatic
+    dependencies:
+      - target: PinApp
+schemes:
+  PinApp:
+    build:
+      targets:
+        PinApp: all
+        PinAppUITests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - PinAppUITests

@@ -7,29 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A6A36046E721BC8DCBF78FB /* MapSelectionCallout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5D41B8C3D1A81D802FEF0 /* MapSelectionCallout.swift */; };
+		0B8FB452BA43614AD60264E9 /* PinAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BA2E103758899724FA4571 /* PinAppUITests.swift */; };
 		0C0BC23DF4E8EAB8BF750CAA /* SearchIsleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43294CBD62522A15A95AF6 /* SearchIsleAPI.swift */; };
+		1F50291937EDBCF1DBD1E423 /* ScoreBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DD2EFAE1862570EC03B298 /* ScoreBadge.swift */; };
 		1FD9BBF380BDE9ADF1502452 /* IslandsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1883827A6EFE7FE856CEE0CE /* IslandsViewModel.swift */; };
+		24F74890132C5C67B3853F96 /* IslandMapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4AFD5E321FFD894880AED0 /* IslandMapPin.swift */; };
 		41477ED5DEE2DDB5E2004D6B /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2506EDE661F64B2B3C12F7 /* Island.swift */; };
 		536E03BAAECCA030CC732BC5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A4355E5F2180EF991B6ED4 /* ContentView.swift */; };
 		564FFF21455402B3316B6697 /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A186EA5B9995338B522B52CF /* MapScreen.swift */; };
 		59A9D1C0A59775734B34893B /* CheckedIslandsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC23E6A0FE56A32933742391 /* CheckedIslandsStore.swift */; };
 		7BA479DB91BE4CDE3864859E /* IslandsListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EB19AE2843E238EC017977 /* IslandsListScreen.swift */; };
+		A9DE44BECDC8BEDFA5D55E49 /* IslandDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08A97D2CBE6B0FFE103CC4B /* IslandDetailScreen.swift */; };
 		AB229931B2E06C840258EBCD /* PinAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7CAFA932F7EFA132933777 /* PinAppApp.swift */; };
 		AF9CAE7F6FD31C851A5BB62C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8D87BCC222AF927E3458399 /* Assets.xcassets */; };
 		BE68CF94FC8F84AB00890DB0 /* CatchBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292E276FB073A2A2C34CF3E8 /* CatchBanner.swift */; };
 		DA24660DEE085B056812B63F /* IslandRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD955787895AC0DEBFADA22C /* IslandRow.swift */; };
 		E59B886ADCE70B3F2C6060F4 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38B5689DED3FE515ABF4786 /* LocationManager.swift */; };
+		EF643AEF62F1AA749272CD9C /* NearestIslandCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F61CB1C9443E788735D6F36 /* NearestIslandCard.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		72E0869D0A0D14AE9780435B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB66604AE3FAF25087910B4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BA2C3DFA27EF9C90747011A;
+			remoteInfo = PinApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0D4C18194527389B46F1CE9C /* PinApp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = PinApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15BA2E103758899724FA4571 /* PinAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinAppUITests.swift; sourceTree = "<group>"; };
+		17A2C7BE93C9C113BB9C42CB /* PinAppUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = PinAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1883827A6EFE7FE856CEE0CE /* IslandsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandsViewModel.swift; sourceTree = "<group>"; };
 		292E276FB073A2A2C34CF3E8 /* CatchBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchBanner.swift; sourceTree = "<group>"; };
 		2E7CAFA932F7EFA132933777 /* PinAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinAppApp.swift; sourceTree = "<group>"; };
 		43EB19AE2843E238EC017977 /* IslandsListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandsListScreen.swift; sourceTree = "<group>"; };
+		5F61CB1C9443E788735D6F36 /* NearestIslandCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestIslandCard.swift; sourceTree = "<group>"; };
 		743148EEFCABC26410F6A6F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		96E5D41B8C3D1A81D802FEF0 /* MapSelectionCallout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSelectionCallout.swift; sourceTree = "<group>"; };
+		97DD2EFAE1862570EC03B298 /* ScoreBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBadge.swift; sourceTree = "<group>"; };
+		A08A97D2CBE6B0FFE103CC4B /* IslandDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandDetailScreen.swift; sourceTree = "<group>"; };
 		A186EA5B9995338B522B52CF /* MapScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
 		A7A4355E5F2180EF991B6ED4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AE4AFD5E321FFD894880AED0 /* IslandMapPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandMapPin.swift; sourceTree = "<group>"; };
 		DA43294CBD62522A15A95AF6 /* SearchIsleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchIsleAPI.swift; sourceTree = "<group>"; };
 		DE2506EDE661F64B2B3C12F7 /* Island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
 		E38B5689DED3FE515ABF4786 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
@@ -76,9 +99,14 @@
 			children = (
 				292E276FB073A2A2C34CF3E8 /* CatchBanner.swift */,
 				A7A4355E5F2180EF991B6ED4 /* ContentView.swift */,
+				A08A97D2CBE6B0FFE103CC4B /* IslandDetailScreen.swift */,
+				AE4AFD5E321FFD894880AED0 /* IslandMapPin.swift */,
 				FD955787895AC0DEBFADA22C /* IslandRow.swift */,
 				43EB19AE2843E238EC017977 /* IslandsListScreen.swift */,
 				A186EA5B9995338B522B52CF /* MapScreen.swift */,
+				96E5D41B8C3D1A81D802FEF0 /* MapSelectionCallout.swift */,
+				5F61CB1C9443E788735D6F36 /* NearestIslandCard.swift */,
+				97DD2EFAE1862570EC03B298 /* ScoreBadge.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -87,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				0D4C18194527389B46F1CE9C /* PinApp.app */,
+				17A2C7BE93C9C113BB9C42CB /* PinAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,10 +144,19 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		AE182684AC5DD2D6679C6BC8 /* PinAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				15BA2E103758899724FA4571 /* PinAppUITests.swift */,
+			);
+			path = PinAppUITests;
+			sourceTree = "<group>";
+		};
 		B145991A6F87CF5EC30EA818 = {
 			isa = PBXGroup;
 			children = (
 				059BAB41F4A76B6009CACE7C /* PinApp */,
+				AE182684AC5DD2D6679C6BC8 /* PinAppUITests */,
 				7AD8F6A4FBFA9524F97B2F5E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -144,6 +182,24 @@
 			productReference = 0D4C18194527389B46F1CE9C /* PinApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		FBC2DFFC5E691DA5BEA18506 /* PinAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F2DF47A3B8A2BCD2AE4936A /* Build configuration list for PBXNativeTarget "PinAppUITests" */;
+			buildPhases = (
+				3939EEAB8F48E55169889EB0 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0ACD33A2F85FB208A145B500 /* PBXTargetDependency */,
+			);
+			name = PinAppUITests;
+			packageProductDependencies = (
+			);
+			productName = PinAppUITests;
+			productReference = 17A2C7BE93C9C113BB9C42CB /* PinAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -155,6 +211,10 @@
 				TargetAttributes = {
 					1BA2C3DFA27EF9C90747011A = {
 						ProvisioningStyle = Automatic;
+					};
+					FBC2DFFC5E691DA5BEA18506 = {
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1BA2C3DFA27EF9C90747011A;
 					};
 				};
 			};
@@ -173,6 +233,7 @@
 			projectRoot = "";
 			targets = (
 				1BA2C3DFA27EF9C90747011A /* PinApp */,
+				FBC2DFFC5E691DA5BEA18506 /* PinAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -189,6 +250,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3939EEAB8F48E55169889EB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B8FB452BA43614AD60264E9 /* PinAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6559D8EB091FE86512EBB411 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -197,17 +266,30 @@
 				59A9D1C0A59775734B34893B /* CheckedIslandsStore.swift in Sources */,
 				536E03BAAECCA030CC732BC5 /* ContentView.swift in Sources */,
 				41477ED5DEE2DDB5E2004D6B /* Island.swift in Sources */,
+				A9DE44BECDC8BEDFA5D55E49 /* IslandDetailScreen.swift in Sources */,
+				24F74890132C5C67B3853F96 /* IslandMapPin.swift in Sources */,
 				DA24660DEE085B056812B63F /* IslandRow.swift in Sources */,
 				7BA479DB91BE4CDE3864859E /* IslandsListScreen.swift in Sources */,
 				1FD9BBF380BDE9ADF1502452 /* IslandsViewModel.swift in Sources */,
 				E59B886ADCE70B3F2C6060F4 /* LocationManager.swift in Sources */,
 				564FFF21455402B3316B6697 /* MapScreen.swift in Sources */,
+				0A6A36046E721BC8DCBF78FB /* MapSelectionCallout.swift in Sources */,
+				EF643AEF62F1AA749272CD9C /* NearestIslandCard.swift in Sources */,
 				AB229931B2E06C840258EBCD /* PinAppApp.swift in Sources */,
+				1F50291937EDBCF1DBD1E423 /* ScoreBadge.swift in Sources */,
 				0C0BC23DF4E8EAB8BF750CAA /* SearchIsleAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0ACD33A2F85FB208A145B500 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BA2C3DFA27EF9C90747011A /* PinApp */;
+			targetProxy = 72E0869D0A0D14AE9780435B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		5C8E6337D394682932588C11 /* Release */ = {
@@ -225,6 +307,25 @@
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		7426A874FE6AD33B5CA985FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinapp.PinAppUITests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PinApp;
 			};
 			name = Release;
 		};
@@ -365,6 +466,25 @@
 			};
 			name = Release;
 		};
+		ED02A7442703BE7ABDAE2340 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinapp.PinAppUITests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PinApp;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -373,6 +493,15 @@
 			buildConfigurations = (
 				77B7725F5E7F4E415FAC55CD /* Debug */,
 				E679DA17343FD757511F81AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7F2DF47A3B8A2BCD2AE4936A /* Build configuration list for PBXNativeTarget "PinAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED02A7442703BE7ABDAE2340 /* Debug */,
+				7426A874FE6AD33B5CA985FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
